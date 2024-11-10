@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8,<4.0
+    - python {{ python_min }}
     - pip
     - poetry-core >=1.0.0
   run:
-    - python >=3.8,<4.0
+    - python >={{ python_min }}
     - microsoft-kiota-abstractions
     - pendulum >=3.0.0b1
 
@@ -30,6 +30,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
