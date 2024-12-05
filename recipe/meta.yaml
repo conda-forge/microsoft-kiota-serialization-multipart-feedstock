@@ -1,5 +1,5 @@
 {% set name = "microsoft-kiota-serialization-multipart" %}
-{% set version = "1.6.3" %}
+{% set version = "1.6.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/microsoft_kiota_serialization_multipart-{{ version }}.tar.gz
-  sha256: 18a9090cd2ee59f21aefd3f4ba06c27ef980722c8085e5847ae00c7a41ae7fd4
+  sha256: 11b4466ef75f739ce30bbc22ccb0b0534f7aab5d7a205da004d905aef1bf7da4
 
 build:
   noarch: python
