@@ -1,5 +1,5 @@
 {% set name = "microsoft-kiota-serialization-multipart" %}
-{% set version = "1.7.0" %}
+{% set version = "1.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/microsoft_kiota_serialization_multipart-{{ version }}.tar.gz
-  sha256: 80da4651e9ee8217ece7101eaeb19984f970b656edcb3e2cd46c06b2845da9c1
+  sha256: bbafebadef387dfb1749ad6ff50e221c08981f53d47af962b4353660d604f0d4
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >={{ python_min }},<4.0
     - microsoft-kiota-abstractions
-    - pendulum >=3.0.0b1
+    - pendulum >=3.0.0
 
 test:
   imports:
