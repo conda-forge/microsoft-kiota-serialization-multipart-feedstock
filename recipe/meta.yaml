@@ -1,5 +1,5 @@
 {% set name = "microsoft-kiota-serialization-multipart" %}
-{% set version = "1.9.5" %}
+{% set version = "1.9.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/microsoft_kiota_serialization_multipart-{{ version }}.tar.gz
-  sha256: b6c579d63f96a82a385cb53591a90e8673ce365b65f7275535d2acfa1a8953e7
+  sha256: 79758f2144befaeb6cfec98efb7970a208d537a6ac46049e6ba34d593bcd5964
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - poetry-core >=1.0.0
   run:
     - python >={{ python_min }},<4.0
-    - microsoft-kiota-abstractions 1.9.5
+    - microsoft-kiota-abstractions 1.9.6
 
 test:
   imports:
