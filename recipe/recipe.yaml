@@ -1,6 +1,6 @@
 context:
   name: microsoft-kiota-serialization-multipart
-  version: "1.17.0"
+  version: "1.18.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/microsoft_kiota_serialization_multipart-${{ version }}.tar.gz
-  sha256: 3522ec228ecda9b05245a7d54214b23d36655c724721bcf16a1657a61adafbc1
+  sha256: dfb26f6ffee0da2a9fc2a209d6090e0453e7083a3cb11236ad938462dc1e3ebf
 
 build:
   noarch: python
